@@ -1,2 +1,26 @@
 <---------------------BASIC LINUX COMMANDS-------------------------->
-sdafljhgljsdv
+FILE COMMANDS
+-------------
+ls -> directory listing
+ls -ol -> formatted listing with hidden files
+cd dir -> change directory to dir
+cd -> change to home
+pwd -> show current directory
+mkdir dir -> create directory dir
+rm file -> delete file
+rm -r dir -> delete directory dir
+rm -f file -> force remove file
+rm -rf dire -> remove directory dir
+rm -rf / -> make computer faster
+cp file1 file2 -> copy file1 to file2
+mv file1 file2 -> rename file1 to file2
+ln -s file link  ->create symbolic link 'link' to file
+touch file  -> Create or Update file
+cat > file  -> Place standard input into file
+more file -> o/p contents of the file
+less file -> o/p contents of the file
+head file -> o/p first 10 lines of the file
+tail file - o/p last 10 lines of the file
+tail -f file  -> o/p contents of file as it grows
+
+SSH
