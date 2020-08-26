@@ -23,4 +23,53 @@ head file -> o/p first 10 lines of the file
 tail file - o/p last 10 lines of the file
 tail -f file  -> o/p contents of file as it grows
 
-SSH
+
+DIRECTORIES:
+------------
+pwd -> Current path
+cd <dir> -> change directory to dir
+ls -> list directory content
+mkdir <directory> -> create new directory named <directory>
+
+
+FILE PERMISSION NUMBERS
+----------------------
+0- No Permission  : ---
+1- Execute        : --x
+2- Write          : -w-
+3- Execute+Write  : -wx
+4- Read           : r--
+5- Read+Execute   : r-x
+6- Read+Write     : rw-
+7- Read+Write+Exe : rwx
+
+  X         X         X
+  |         |         |
+Owner   UserGroup   World
+
+chmod 755 <file>  --> Change file permission to 755 ( Owner-7-rwx :: UserGroup-5-rx :: World-5-rx )
+chmod 600 <file>  --> Change file permission to 755 (Owner-6-rw :: UserGroup-0-NoPermission :: World-0-NoPermission)
+chown <user>:<group> <file>  --> Change ownership of <file> to <user> and <group>
+
+
+
+  SEARCH
+ ---------
+ find <dir> -name "<file>"
+ grep "<text>" <file>
+ grep -rl "<text>" <dir>
+
+
+OUTPUT
+------
+cat <file>   --> Output the content of <file>
+less <file>   --> o/p the content of <file>
+head <file>   --> o/p the first 10 Lines
+clear  --> clear the command line window
+
+NETWORK
+-------
+ping <host>  --> ping <host> display status
+whois <domain>  --> o/p whois information for <domain>
+curl -O <url/to/file>  --> Download <file> (via HTTP[S] or FTP)
+ssh <username>@<host>
